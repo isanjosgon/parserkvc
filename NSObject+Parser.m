@@ -10,9 +10,8 @@
 - (NSDictionary*)mappingKeyIfNeeded
 {
     return @{
-             @"mediatype":@"type",
-             @"description":@"summary",
-             @"media":@"content"
+             @"server_key1":@"mymodel_key1",
+             @"server_key2":@"mymodel_key2"
             };
 }
 
@@ -22,11 +21,11 @@
     if (!mappedKey) {
         mappedKey = key;
     }
-    
+
     if (![self respondsToSelector:NSSelectorFromString(mappedKey)]) {
         return;
     }
-    
+
     NSError *error = nil;
     BOOL validated = [self validateValue:&value forKey:mappedKey error:&error];
     if (validated) {
