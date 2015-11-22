@@ -1,6 +1,6 @@
 # parserkvc
 
-JSON parse based on KVC.
+JSON parser based on KVC.
 
 ### How to use ###
 
