@@ -21,7 +21,7 @@ to your model in an easy way. Just call the category with the proper NSDictionar
 ** If you want to change the name of some key of the json by your property name,
 just add it
 ```sh
-- (NSDictionary*)mappingKeyIfNeeded;
+- (NSDictionary *)mappingKeyIfNeeded;
 ```
 like a key:value pair
 ```sh
