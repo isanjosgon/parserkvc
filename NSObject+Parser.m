@@ -7,7 +7,7 @@
 
 @implementation NSObject (Parser)
 
-- (NSDictionary*)mappingKeyIfNeeded
+- (NSDictionary *)mappingKeyIfNeeded
 {
     return @{
              @"server_key1":@"mymodel_key1",
